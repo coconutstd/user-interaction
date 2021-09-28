@@ -4,42 +4,53 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
     <title>Feed</title>
 </head>
 <body>
-    <a href="#">
-        <img src="https://user-images.githubusercontent.com/19285811/69063907-43da4800-0a58-11ea-8efb-4b57dca4e3fe.png" alt="user-image">
-    </a>
+    <div class="feed">
+        <div class="feed-user-profile">
+            <a href="#">
+                <img src="https://avatars.githubusercontent.com/u/25981278?v=4" alt="user-image">
+            </a>
+            
+            <div>
+                <h1>
+                    <a href="#">
+                        LEEJUNUI
+                    </a>
+                </h1>
+                <span>
+                    30 min
+                </span>
+            </div>
+
+            <button type="button" class="following">
+                Follow
+            </button>
+        </div>
     
-    <h1>
-        <a href="#">
-            Kimbug
-        </a>
-    </h1>
-    <span>
-        30 min
-    </span>
-
-    <button type="button">
-        Follow
-    </button>
-
-    <p>
-        The most beautiful experience we can have is the mysterious. It is the fundamental emotion that stands at the cradle of true art and true science. — Albert Einstein
-    </p>
-
-    <button type="button">
-        10 Likes
-    </button>
-    <button type="button">
-        0 Comments
-    </button>
-
-    <form action="" method="post">
-        <textarea placeholder="Write a Comment."></textarea>
-        <button type="submit">Submit</button>
-    </form>
-
-
+       
+        <div class="feed-content">
+            <p>
+                The most beautiful experience we can have is the mysterious. It is the fundamental emotion that stands at the cradle of true art and true science. — Albert Einstein
+            </p>
+        </div>
+        
+    
+        <div class="feed-footer">
+            <button type="button">
+                10 Likes
+            </button>
+            <button type="button">
+                0 Comments
+            </button>
+        </div>
+    
+        <form class="feed-comment" action="" method="post">
+            <textarea placeholder="Write a Comment."></textarea>
+            <button type="submit">Submit</button>
+        </form>
+    </div>
 </body>
 </html>
