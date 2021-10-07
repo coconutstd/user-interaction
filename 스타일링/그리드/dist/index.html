@@ -7,9 +7,16 @@
     <link rel="stylesheet" href="/index.d688e65a.css">
     <title>Grid</title>
     <style>.grid-container {
-        height: 100vh;
+        height: 80vh;
         display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(200px, auto));
+        grid-template-columns: repeat(3, 1fr);
+        gap: 10px;
+        /* grid-template-rows: repeat(3, minmax(100px, auto)); */
+        grid-auto-columns: minmax(100px, auto);
+    }
+    .grid-item:nth-child(1){
+        grid-column: 1 / 3;
+        grid-row: 2 / 4;
     }
 </style>
 </head>
@@ -18,12 +25,12 @@
         <div class="grid-item">A</div>
         <div class="grid-item">B</div>
         <div class="grid-item">C</div>
-        <!-- <div class="grid-item">D</div>
+        <div class="grid-item">D</div>
         <div class="grid-item">E</div>
         <div class="grid-item">F</div>
-        <div class="grid-item">G</div>
+        <div class="grid-item">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Numquam pariatur nostrum neque incidunt molestias odio aperiam ipsam voluptatum dignissimos nihil iste minus, culpa accusamus recusandae necessitatibus iusto? Soluta provident modi, vitae cupiditate accusamus quis, consequuntur cumque facilis et perferendis quaerat distinctio voluptatibus fugiat atque dolores perspiciatis quia, ex laudantium tenetur aliquam doloribus officiis non! Placeat voluptatibus doloremque dolorum est, laboriosam possimus perspiciatis suscipit mollitia ducimus inventore iste aliquam qui quia repellendus! Soluta fugit hic, ducimus quod ullam facere consequatur, architecto voluptatum quae modi dolores! Perspiciatis, quidem dolore incidunt ea minus molestiae accusantium harum rerum, facilis tempore illo sunt id similique.</div>
         <div class="grid-item">H</div>
-        <div class="grid-item">I</div> -->
+        <div class="grid-item">I</div>
     </div>
 </body>
 </html><script src="/index.9297dd6d.js"></script>
