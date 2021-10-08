@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../default.css">
+  <title>Grid Template areas</title>
+  <style>
+    .grid-container{
+      display: grid;
+      height: 100vh;
+      gap: 1rem;
+      grid-template-columns: 1fr 3fr 1fr;
+      grid-template-areas:
+        '... header header'
+        'sidebar-a main sidebar-b'
+        'footer footer footer'
+    }
+    .header { grid-area: header; }
+    .sidebar-a { grid-area: sidebar-a; }
+    .sidebar-b { grid-area: sidebar-b; }
+    .main { grid-area: main; }
+    .footer { grid-area: footer; }
+  </style>
+</head>
+<body>
+  <div class="grid-container">
+    <div class="header grid-item">Header</div>
+    <div class="sidebar-a grid-item">Sidebar A</div>
+    <div class="sidebar-b grid-item">Sidebar B</div>
+    <div class="main grid-item">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cumque repellat, ipsum excepturi animi totam sequi deleniti aperiam numquam voluptate, ex provident eum temporibus ea est sint ipsam nemo quas consequatur mollitia minima. Magni facere deserunt laboriosam, odio rerum, unde aliquid beatae rem distinctio est animi delectus quod, cum labore eos repudiandae. Hic earum asperiores molestias ex animi maiores quibusdam ad delectus officiis nesciunt quasi harum, qui consequatur! Amet vero dolorum soluta dolorem culpa illo reiciendis facilis vitae libero, iste debitis, aperiam voluptatem recusandae fugiat sequi assumenda, possimus ipsam perferendis laudantium? Dicta sit sequi laudantium ducimus voluptates cumque architecto eum vel modi. Harum, maxime commodi quisquam enim cumque laboriosam fugit dolores atque vitae provident voluptates ullam sunt nisi esse, a, itaque amet. Debitis animi, facilis esse recusandae impedit placeat expedita eos harum quaerat quisquam iure, et consequuntur sint tempora nemo qui iste. Necessitatibus doloremque expedita error velit nulla saepe blanditiis quisquam inventore beatae enim? Error harum natus alias amet dolorem aperiam eum asperiores optio magnam? Expedita quibusdam et veniam vero minima hic fugiat aperiam at cupiditate quia qui a architecto sequi, laborum optio libero animi saepe in voluptatem assumenda. Animi maiores odit rem quidem facilis nemo, culpa labore repellendus odio dolor doloremque adipisci atque voluptatibus, placeat officiis deleniti expedita saepe ad?</div>
+    <div class="footer grid-item">Footer</div>
+  </div>
+</body>
+</html>
