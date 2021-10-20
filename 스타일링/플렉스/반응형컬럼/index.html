@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="default.css">
+  <title>반응형 컬럼</title>
+  <style>
+    .flex-container {
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+    .flex-item {
+      flex: 1 auto;
+    }
+    @media (min-width: 400px) {
+      .flex-container {
+        flex-direction: row;
+        flex-wrap: wrap;
+      }
+
+      .flex-item {
+        width: 50%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="flex-container">
+    <div class="flex-item">AAAAAA</div>
+    <div class="flex-item">BBBBB</div>
+    <div class="flex-item">CCCC</div>
+    <div class="flex-item">DD</div>
+    <div class="flex-item">AAAAAAAAAAAAAAAA</div>
+    <div class="flex-item">CCCCCCDCDCD</div>
+    <div class="flex-item">EEREREREEEE</div>
+    <div class="flex-item">FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF</div>
+    <div class="flex-item">GGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGG</div>
+    <div class="flex-item">HH</div>
+    <div class="flex-item">CCCCCCDCDCD</div>
+    <div class="flex-item">EEREREREEEE</div>
+    <div class="flex-item">FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF</div>
+    <div class="flex-item">GGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGG</div>
+  </div>
+</body>
+</html>
