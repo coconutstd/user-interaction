@@ -1,12 +1,18 @@
 {
 	"folders": [
-		{
-			"path": "../../../javascript"
-		},
-		{
-			"path": "../.."
-		}
-	],
+    {
+      "path": "../../../javascript"
+    },
+    {
+      "path": "../.."
+    },
+    {
+      "path": "../../../../frontend/hello-world"
+    },
+    {
+      "path": "../../../../Downloads/part5-코드/5.1~5.3회원가입 폼"
+    }
+  ],
 	"settings": {
 		"liveServer.settings.multiRootWorkspaceName": "user-interaction"
 	}
